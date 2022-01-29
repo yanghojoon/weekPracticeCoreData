@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="69.642857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Store View Controller-->
         <scene sceneID="y9J-B7-EvN">
             <objects>
-                <viewController id="PVU-Ec-6Qj" sceneMemberID="viewController">
+                <viewController id="PVU-Ec-6Qj" customClass="StoreViewController" customModule="WeekPracticeCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K5S-i4-tWq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,6 +78,9 @@
                                                 <rect key="frame" x="87.5" y="0.0" width="286.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="contentTextField:" destination="ICX-T9-pYK" eventType="editingDidEnd" id="pZL-Xu-aIa"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -116,8 +119,13 @@
                             <constraint firstItem="Gm6-tE-fFJ" firstAttribute="centerX" secondItem="K5S-i4-tWq" secondAttribute="centerX" id="mpd-Bn-qQa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="categorySegmentedControll" destination="Utd-Qe-gWp" id="JXH-ob-IOn"/>
+                        <outlet property="contentTextField" destination="gbR-zl-2Wf" id="ezi-Xq-JTZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fxo-k1-oF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ICX-T9-pYK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1751" y="70"/>
         </scene>
