@@ -18,6 +18,7 @@
 		DED7B51627A54A7200AECF7F /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7B51427A54A7200AECF7F /* Entity+CoreDataProperties.swift */; };
 		DED7B51827A54D7F00AECF7F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7B51727A54D7F00AECF7F /* Model.swift */; };
 		DED7B51A27A54E7000AECF7F /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7B51927A54E7000AECF7F /* StoreViewController.swift */; };
+		DED7B51C27A5515200AECF7F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7B51B27A5515200AECF7F /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DED7B51427A54A7200AECF7F /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DED7B51727A54D7F00AECF7F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DED7B51927A54E7000AECF7F /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		DED7B51B27A5515200AECF7F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				DED7B4FE27A549DA00AECF7F /* SceneDelegate.swift */,
 				DED7B50027A549DA00AECF7F /* ViewController.swift */,
 				DED7B51927A54E7000AECF7F /* StoreViewController.swift */,
+				DED7B51B27A5515200AECF7F /* CoreDataManager.swift */,
 				DED7B51727A54D7F00AECF7F /* Model.swift */,
 				DED7B50227A549DA00AECF7F /* Main.storyboard */,
 				DED7B50527A549DB00AECF7F /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 				DED7B51227A54A0F00AECF7F /* CoreData.xcdatamodeld in Sources */,
 				DED7B50127A549DA00AECF7F /* ViewController.swift in Sources */,
 				DED7B4FD27A549DA00AECF7F /* AppDelegate.swift in Sources */,
+				DED7B51C27A5515200AECF7F /* CoreDataManager.swift in Sources */,
 				DED7B51527A54A7200AECF7F /* Entity+CoreDataClass.swift in Sources */,
 				DED7B4FF27A549DA00AECF7F /* SceneDelegate.swift in Sources */,
 			);
