@@ -39,5 +39,15 @@ extension ViewController: UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView,
+                   commit editingStyle: UITableViewCell.EditingStyle,
+                   forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let object = coreDataManager.fetchContext()[indexPath.row]
+            coreDataManager.delete(object: object)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 }
 

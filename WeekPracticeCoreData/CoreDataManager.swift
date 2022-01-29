@@ -54,5 +54,12 @@ class CoreDataManager {
         }
         return []
     }
+    
+    func delete(object: NSManagedObject) {
+        let context = persistentContainer.viewContext
+        context.delete(object)
+        saveContext()
+        print("삭제 성공 🧹")
+    }
 }
 
