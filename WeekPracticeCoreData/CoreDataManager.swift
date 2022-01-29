@@ -27,5 +27,16 @@ class CoreDataManager {
             print("Error: \(error), \(error.userInfo)")
         }
     }
+    
+    func insertJoke(model: Model) {
+        if let entity = NSEntityDescription.entity(forEntityName: "Joke",
+                                                   in: persistentContainer.viewContext) {
+            let joke = NSManagedObject(entity: entity, insertInto: persistentContainer.viewContext)
+            joke.setValue(model.content, forKey: "content")
+            joke.setValue(model.category, forKey: "category")
+            joke.setValue(model.id, forKey: "id")
+            saveContext()
+        }
+    }
 }
 
