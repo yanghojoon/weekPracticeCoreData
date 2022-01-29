@@ -11,6 +11,7 @@ class StoreViewController: UIViewController {
     @IBOutlet weak var contentTextField: UITextField!
     @IBOutlet weak var categorySegmentedControll: UISegmentedControl!
     var coreDataManager: CoreDataManager = CoreDataManager.shared
+    weak var delegate: ReloadDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class StoreViewController: UIViewController {
         
         let model = Model(content: contentTextField.text!, category: category!, id: uuid)
         coreDataManager.insertJoke(model: model)
+        delegate?.reloadData()
         self.dismiss(animated: true, completion: nil)
     }
 }

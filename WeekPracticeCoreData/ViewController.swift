@@ -21,6 +21,12 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         tableView.reloadData()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let secondViewController = segue.destination as? StoreViewController {
+            secondViewController.delegate = self
+        }
+    }
 }
 
 extension ViewController: UITableViewDataSource {
@@ -44,10 +50,15 @@ extension ViewController: UITableViewDataSource {
                    commit editingStyle: UITableViewCell.EditingStyle,
                    forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let object = coreDataManager.fetchContext()[indexPath.row]
+            let object = coreDataManager.fetchContext()[indexPath.row] // Joke 배열을 순서대로 가져온다는 보장이 없다.
             coreDataManager.delete(object: object)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
 }
 
+extension ViewController: ReloadDelegate {
+    func reloadData() {
+        tableView.reloadData()
+    }
+}

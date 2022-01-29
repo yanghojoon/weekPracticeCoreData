@@ -45,7 +45,7 @@
                     <navigationItem key="navigationItem" id="dod-Sa-wZY">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="vFY-oT-XGh">
                             <connections>
-                                <segue destination="PVU-Ec-6Qj" kind="presentation" id="i8N-7H-cRW"/>
+                                <segue destination="PVU-Ec-6Qj" kind="presentation" identifier="modalSegue" id="i8N-7H-cRW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
