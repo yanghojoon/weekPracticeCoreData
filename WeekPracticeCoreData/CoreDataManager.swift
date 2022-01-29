@@ -8,6 +8,7 @@
 import CoreData
 
 class CoreDataManager {
+    static var shared: CoreDataManager = CoreDataManager()
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "CoreData")
         container.loadPersistentStores { description, error in
