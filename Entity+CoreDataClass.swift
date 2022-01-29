@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(Joke)
-public class Joke: NSManagedObject {
+public class Joke: NSManagedObject { // 모델
 
 }

@@ -13,7 +13,7 @@ import CoreData
 extension Joke {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Joke> {
-        return NSFetchRequest<Joke>(entityName: "Entity")
+        return NSFetchRequest<Joke>(entityName: "Joke")
     }
     
     @NSManaged public var body: String?

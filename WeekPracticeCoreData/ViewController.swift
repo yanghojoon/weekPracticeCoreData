@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +34,7 @@ extension ViewController: UITableViewDataSource {
         }
         
         var content = cell.defaultContentConfiguration()
-        content.text = coreDataManager.fetchContext()[indexPath.row].description
+        content.text = coreDataManager.fetchContext()[indexPath.row].body
         cell.contentConfiguration = content
         
         return cell
