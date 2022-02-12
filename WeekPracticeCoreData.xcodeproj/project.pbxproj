@@ -14,8 +14,8 @@
 		DED7B50627A549DB00AECF7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED7B50527A549DB00AECF7F /* Assets.xcassets */; };
 		DED7B50927A549DB00AECF7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED7B50727A549DB00AECF7F /* LaunchScreen.storyboard */; };
 		DED7B51227A54A0F00AECF7F /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DED7B51027A54A0F00AECF7F /* CoreData.xcdatamodeld */; };
-		DED7B51527A54A7200AECF7F /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7B51327A54A7200AECF7F /* Entity+CoreDataClass.swift */; };
-		DED7B51627A54A7200AECF7F /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7B51427A54A7200AECF7F /* Entity+CoreDataProperties.swift */; };
+		DED7B51527A54A7200AECF7F /* Joke+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7B51327A54A7200AECF7F /* Joke+CoreDataClass.swift */; };
+		DED7B51627A54A7200AECF7F /* Joke+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7B51427A54A7200AECF7F /* Joke+CoreDataProperties.swift */; };
 		DED7B51827A54D7F00AECF7F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7B51727A54D7F00AECF7F /* Model.swift */; };
 		DED7B51A27A54E7000AECF7F /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7B51927A54E7000AECF7F /* StoreViewController.swift */; };
 		DED7B51C27A5515200AECF7F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7B51B27A5515200AECF7F /* CoreDataManager.swift */; };
@@ -32,8 +32,8 @@
 		DED7B50827A549DB00AECF7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DED7B50A27A549DB00AECF7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DED7B51127A54A0F00AECF7F /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
-		DED7B51327A54A7200AECF7F /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DED7B51427A54A7200AECF7F /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DED7B51327A54A7200AECF7F /* Joke+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Joke+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DED7B51427A54A7200AECF7F /* Joke+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Joke+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DED7B51727A54D7F00AECF7F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DED7B51927A54E7000AECF7F /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		DED7B51B27A5515200AECF7F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -54,8 +54,8 @@
 		DED7B4F027A549DA00AECF7F = {
 			isa = PBXGroup;
 			children = (
-				DED7B51327A54A7200AECF7F /* Entity+CoreDataClass.swift */,
-				DED7B51427A54A7200AECF7F /* Entity+CoreDataProperties.swift */,
+				DED7B51327A54A7200AECF7F /* Joke+CoreDataClass.swift */,
+				DED7B51427A54A7200AECF7F /* Joke+CoreDataProperties.swift */,
 				DED7B4FB27A549DA00AECF7F /* WeekPracticeCoreData */,
 				DED7B4FA27A549DA00AECF7F /* Products */,
 			);
@@ -161,13 +161,13 @@
 			files = (
 				DED7B51A27A54E7000AECF7F /* StoreViewController.swift in Sources */,
 				DED7B51827A54D7F00AECF7F /* Model.swift in Sources */,
-				DED7B51627A54A7200AECF7F /* Entity+CoreDataProperties.swift in Sources */,
+				DED7B51627A54A7200AECF7F /* Joke+CoreDataProperties.swift in Sources */,
 				DED7B51227A54A0F00AECF7F /* CoreData.xcdatamodeld in Sources */,
 				DED7B50127A549DA00AECF7F /* ViewController.swift in Sources */,
 				DED7B4FD27A549DA00AECF7F /* AppDelegate.swift in Sources */,
 				DED7B51E27A5788600AECF7F /* ReloadDelegate.swift in Sources */,
 				DED7B51C27A5515200AECF7F /* CoreDataManager.swift in Sources */,
-				DED7B51527A54A7200AECF7F /* Entity+CoreDataClass.swift in Sources */,
+				DED7B51527A54A7200AECF7F /* Joke+CoreDataClass.swift in Sources */,
 				DED7B4FF27A549DA00AECF7F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
